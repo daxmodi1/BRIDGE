@@ -2,8 +2,7 @@
 
 # 🌉 BRIDGE
 
-### **B**ERT **R**epresentations for **I**dentifying **D**epression via **G**radient **E**stimators
-
+### BERT Representations for Identifying Depression via Gradient Estimators
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15.0-orange.svg)](https://tensorflow.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-Latest-green.svg)](https://xgboost.readthedocs.io/)
@@ -336,5 +335,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **BRIDGE** - *Building connections through AI for Mental Health Awareness* 🌉💚
 
 </div>
-#   B R I D G E  
+#   B R I D G E 
+ 
  
