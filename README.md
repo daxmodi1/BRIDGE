@@ -2,44 +2,41 @@
 
 # 🌉 BRIDGE
 
-### BERT Representations for Identifying Depression via Gradient Estimators
+### **B**ERT **R**epresentations for **I**dentifying **D**epression via **G**radient **E**stimators
+
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15.0-orange.svg)](https://tensorflow.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-Latest-green.svg)](https://xgboost.readthedocs.io/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Accuracy](https://img.shields.io/badge/BERT%20Accuracy-94%25-brightgreen.svg)]()
 
-<p align="center">
-  <img src="docs/images/bridge_banner.png" alt="BRIDGE - Mental Health Analysis" width="600">
-</p>
-
 *An AI-powered framework leveraging BERT embeddings and gradient boosting to identify and classify mental health conditions from textual data*
 
-[📊 View Notebooks](#-notebooks) • [🚀 Quick Start](#-quick-start) • [📖 Documentation](#-documentation) • [🤝 Contributing](#-contributing)
+[View Notebooks](#notebooks) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Contributing](#contributing)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [Notebooks](#-notebooks)
-- [Models](#-models)
-- [Dataset](#-dataset)
-- [Results](#-results)
-- [Documentation](#-documentation)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Acknowledgements](#-acknowledgements)
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Notebooks](#notebooks)
+- [Models](#models)
+- [Dataset](#dataset)
+- [Results](#results)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
-## 🎯 Overview
+## Overview
 
 **BRIDGE** (BERT Representations for Identifying Depression via Gradient Estimators) is an advanced AI framework designed to analyze and classify mental health conditions from textual data. Mental health is a critical aspect of overall well-being, and understanding the nuances of mental health conditions can be a powerful tool in providing timely support and interventions.
 
@@ -47,39 +44,39 @@ By leveraging **BERT embeddings** combined with **Gradient Boosting (XGBoost)**,
 
 | Category | Description |
 |----------|-------------|
-| 🟢 **Normal** | No significant mental health concerns |
-| 🔵 **Depression** | Signs of depressive symptoms |
-| 🔴 **Suicidal** | Indicators of suicidal ideation |
-| 🟡 **Anxiety** | Anxiety-related expressions |
-| 🟠 **Stress** | Stress-related patterns |
-| 🟣 **Bi-Polar** | Bipolar disorder indicators |
-| ⚪ **Personality Disorder** | Personality disorder patterns |
+| **Normal** | No significant mental health concerns |
+| **Depression** | Signs of depressive symptoms |
+| **Suicidal** | Indicators of suicidal ideation |
+| **Anxiety** | Anxiety-related expressions |
+| **Stress** | Stress-related patterns |
+| **Bi-Polar** | Bipolar disorder indicators |
+| **Personality Disorder** | Personality disorder patterns |
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- **🔬 Comprehensive EDA**: In-depth exploratory data analysis with visualizations
-- **📝 Text Preprocessing**: Advanced NLP pipeline with tokenization, stemming, and cleaning
-- **🤖 Multiple Models**: Implementation of various ML algorithms for comparison
-- **🧠 BERT Integration**: State-of-the-art transformer-based embeddings achieving **94% accuracy**
-- **📊 TF-IDF Features**: Traditional NLP feature extraction with n-grams
-- **⚖️ Class Balancing**: SMOTE and resampling techniques for handling imbalanced data
-- **💾 Model Persistence**: Pre-trained models saved for inference
-- **📈 Detailed Metrics**: Confusion matrices, classification reports, and accuracy scores
+- **Comprehensive EDA** - In-depth exploratory data analysis with visualizations
+- **Text Preprocessing** - Advanced NLP pipeline with tokenization, stemming, and cleaning
+- **Multiple Models** - Implementation of various ML algorithms for comparison
+- **BERT Integration** - State-of-the-art transformer-based embeddings achieving **94% accuracy**
+- **TF-IDF Features** - Traditional NLP feature extraction with n-grams
+- **Class Balancing** - SMOTE and resampling techniques for handling imbalanced data
+- **Model Persistence** - Pre-trained models saved for inference
+- **Detailed Metrics** - Confusion matrices, classification reports, and accuracy scores
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 BRIDGE/
 │
-├── 📓 notebooks/                    # Jupyter notebooks
+├── notebooks/                       # Jupyter notebooks
 │   ├── 01_eda_bert_modeling.ipynb   # EDA + BERT model (94% accuracy)
 │   └── 02_ml_modeling.ipynb         # Traditional ML models
 │
-├── 🤖 models/                       # Saved trained models
+├── models/                          # Saved trained models
 │   ├── bernoulli_naive_bayes.pkl
 │   ├── multinomial_naive_bayes.pkl
 │   ├── logistic_regression.pkl
@@ -88,28 +85,28 @@ BRIDGE/
 │   ├── label_encoder.pkl
 │   └── porter_stemmer.pkl
 │
-├── 📊 data/                         # Dataset directory
+├── data/                            # Dataset directory
 │   └── README.md                    # Data source information
 │
-├── 📂 src/                          # Source code
+├── src/                             # Source code
 │   ├── __init__.py
 │   ├── preprocessing.py             # Text preprocessing utilities
 │   └── predict.py                   # Prediction functions
 │
-├── 📚 docs/                         # Documentation
+├── docs/                            # Documentation
 │   ├── images/                      # Images for documentation
 │   └── model_comparison.md          # Detailed model comparison
 │
-├── 📄 README.md                     # Project documentation
-├── 📋 requirements.txt              # Python dependencies
-├── 📜 LICENSE                       # MIT License
-├── 🔧 .gitignore                    # Git ignore rules
-└── 🤝 CONTRIBUTING.md               # Contribution guidelines
+├── README.md                        # Project documentation
+├── requirements.txt                 # Python dependencies
+├── LICENSE                          # MIT License
+├── .gitignore                       # Git ignore rules
+└── CONTRIBUTING.md                  # Contribution guidelines
 ```
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 
@@ -121,7 +118,7 @@ BRIDGE/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/BRIDGE.git
+   git clone https://github.com/daxmodi1/BRIDGE.git
    cd BRIDGE
    ```
 
@@ -147,7 +144,7 @@ BRIDGE/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Using Pre-trained Models
 
@@ -201,7 +198,7 @@ print(f"Predicted Status: {result}")
 
 ---
 
-## 📓 Notebooks
+## Notebooks
 
 | Notebook | Description | Key Highlights |
 |----------|-------------|----------------|
@@ -220,7 +217,7 @@ jupyter lab
 
 ---
 
-## 🤖 Models
+## Models
 
 ### Model Comparison
 
@@ -246,7 +243,7 @@ All trained models are saved in the `models/` directory:
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 ### Source
 
@@ -262,7 +259,7 @@ The dataset integrates information from multiple Kaggle datasets:
 - Suicidal Mental Health Dataset
 - Suicidal Tweet Detection Dataset
 
-📎 **Download**: [Sentiment Analysis for Mental Health - Kaggle](https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health)
+**Download**: [Sentiment Analysis for Mental Health - Kaggle](https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health)
 
 ### Dataset Statistics
 
@@ -275,7 +272,7 @@ The dataset integrates information from multiple Kaggle datasets:
 
 ---
 
-## 📈 Results
+## Results
 
 ### Key Findings from EDA
 
@@ -290,17 +287,15 @@ The **BERT + XGBoost** combination achieved the highest accuracy of **94%**, dem
 
 ---
 
-## 📖 Documentation
+## Documentation
 
 Detailed documentation is available in the `docs/` directory:
 
 - [Model Comparison](docs/model_comparison.md) - Detailed analysis of all models
-- [Data Dictionary](docs/data_dictionary.md) - Feature descriptions
-- [Methodology](docs/methodology.md) - Approach and techniques used
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
@@ -312,13 +307,13 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [Kaggle](https://www.kaggle.com/) for hosting the dataset
 - [TensorFlow Hub](https://tfhub.dev/) for BERT models
@@ -335,6 +330,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **BRIDGE** - *Building connections through AI for Mental Health Awareness* 🌉💚
 
 </div>
-#   B R I D G E 
- 
- 
