@@ -101,7 +101,8 @@ BRIDGE/
 ├── requirements.txt                 # Python dependencies
 ├── LICENSE                          # MIT License
 ├── .gitignore                       # Git ignore rules
-└── CONTRIBUTING.md                  # Contribution guidelines
+├── CONTRIBUTING.md                  # Contribution guidelines
+└── app.py                           # Streamlit web application
 ```
 
 ---
@@ -146,7 +147,22 @@ BRIDGE/
 
 ## Quick Start
 
-### Using Pre-trained Models
+### 🌐 Web Application (Streamlit)
+
+The easiest way to use BRIDGE is through the web interface:
+
+```bash
+streamlit run app.py
+```
+
+This will launch a beautiful web application where you can:
+- Enter text for mental health classification
+- See prediction results with confidence scores
+- Try example texts for different categories
+
+![BRIDGE Web App](docs/images/app_screenshot.png)
+
+### Using Pre-trained Models (Python)
 
 ```python
 import joblib
