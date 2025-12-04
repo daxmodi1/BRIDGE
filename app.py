@@ -59,13 +59,10 @@ def preprocess_text(text, stemmer):
     # Remove markdown-style links
     text = re.sub(r'\[.*?\]\(.*?\)', '', text)
     
-    # Remove handles/mentions
     text = re.sub(r'@\w+', '', text)
     
-    # Remove punctuation and special characters
     text = re.sub(r'[^\w\s]', '', text)
     
-    # Tokenize and stem
     tokens = word_tokenize(text)
     stemmed = ' '.join(stemmer.stem(token) for token in tokens)
     
@@ -189,13 +186,6 @@ with st.sidebar:
     - 🟣 Bipolar
     - ⚪ Personality Disorder
     """)
-    
-    st.markdown("---")
-    st.markdown("### ⚠️ Disclaimer")
-    st.markdown("""
-    This tool is for **educational purposes only** and should not replace 
-    professional mental health diagnosis.
-    """)
 
 # Initialize session state for example text
 if 'example_text' not in st.session_state:
@@ -220,17 +210,17 @@ with col1:
     example_col1, example_col2, example_col3 = st.columns(3)
     
     with example_col1:
-        if st.button("😊 Normal", use_container_width=True):
+        if st.button("Normal", use_container_width=True):
             st.session_state.example_text = "I had a great day today! Went for a walk in the park and enjoyed the sunshine. Life is good."
             st.rerun()
     
     with example_col2:
-        if st.button("😔 Depression", use_container_width=True):
+        if st.button("Depression", use_container_width=True):
             st.session_state.example_text = "I feel so empty inside. Nothing brings me joy anymore and I just want to stay in bed all day."
             st.rerun()
     
     with example_col3:
-        if st.button("😰 Anxiety", use_container_width=True):
+        if st.button("Anxiety", use_container_width=True):
             st.session_state.example_text = "My heart is racing and I can't stop worrying about everything. What if something bad happens?"
             st.rerun()
     
